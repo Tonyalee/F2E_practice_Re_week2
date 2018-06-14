@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="Games">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>Check List Tool | By Tonya</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+    <!-- 清單打星星 & 清單編輯 -->
+    <script>
+        $(document).ready(function() {
+            $('.star').click(function() {
+                $(this).find('i').toggleClass('star-clicked')
+            });
+            $('.pen').click(function() {
+                $(this).find('i').toggleClass('pen-clicked')
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="inner tab">
+                <div><a href="#">My Tasks</a></div>
+                <div><a href="#">In Progress</a></div>
+                <div><a href="#">Completed</a></div>
+            </div>
+        </header>
+        <div class="inner">
+            <form>
+                <div class="event-input-task">
+                    <div class="event-input">
+                        <input type="text" name="event-input" id="event-input" placeholder="Add Task" /><i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="item event-add">
+                    <div class="item-bar">
+                        <label for="item-1"><input type="checkbox" name="item-1" id="item-1" checked/><span class="check-blue"></span><h3>Type Something Here…</h3></label>
+                        <div class="status">
+                            <a class="pen" href="#"><i class="fas fa-pencil-alt" ></i></a>
+                            <a class="star" href="#"><i class="fas fa-star"></i></a>
+                        </div>
+                        <div class="tools">
+                            <span class="icon-calendar"><i class="far fa-calendar-alt"></i>5/14</span>
+                            <span class="icon-file"><i class="far fa-file"></i></span>
+                            <span class="icon-message"><i class="far fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <div class="calendar">
+                            <label for="calendar"><i class="far fa-calendar-alt"></i>Deadline</label>
+                            <input id="calendar" type="" value="" placeholder="yyyy/mm/dd" /><input id="calendar" type="" value="" placeholder="hh:mm" />
+                        </div>
+                        <div class="file">
+                            <label for="file"><i class="far fa-file"></i>File</label>
+                            <div><input id="file" type="file" name="file" accept=".jpg, .jpeg, .png">
+                                <i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="message">
+                            <label for="message"><i class="far fa-comment-dots"></i>Comment</label>
+                            <textarea cols="50" rows="5" placeholder="Type your memo here…"></textarea>
+                        </div>
+                    </div>
+                    <div class="item-btn">
+                        <a class="btn-cancel" href="#"><i class="fas fa-times"></i>Cancel</a><a class="btn-save" href="#"><i class="fas fa-plus"></i>Add Task</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-bar">
+                        <label for="item-2"><input type="checkbox" name="item-2" id="item-2"/><span class="check-blue"></span><h3>Type Something Here…</h3></label>
+                        <div class="status">
+                            <a class="pen" href="#"><i class="fas fa-pencil-alt" ></i></a>
+                            <a class="star" href="#"><i class="fas fa-star"></i></a>
+                        </div>
+                        <div class="tools">
+                            <span class="icon-calendar"><i class="far fa-calendar-alt"></i>5/14</span>
+                            <span class="icon-file"><i class="far fa-file"></i></span>
+                            <span class="icon-message"><i class="far fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <div class="calendar">
+                            <label for="calendar"><i class="far fa-calendar-alt"></i>Deadline</label>
+                            <input id="calendar" type="" value="" placeholder="yyyy/mm/dd" /><input id="calendar" type="" value="" placeholder="hh:mm" />
+                        </div>
+                        <div class="file">
+                            <label for="file"><i class="far fa-file"></i>File</label>
+                            <div><input id="file" type="file" name="file" accept=".jpg, .jpeg, .png">
+                                <i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="message">
+                            <label for="message"><i class="far fa-comment-dots"></i>Comment</label>
+                            <textarea cols="50" rows="5" placeholder="Type your memo here…"></textarea>
+                        </div>
+                    </div>
+                    <div class="item-btn">
+                        <a class="btn-cancel" href="#"><i class="fas fa-times"></i>Cancel</a><a class="btn-save" href="#"><i class="fas fa-plus"></i>Add Task</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-bar">
+                        <label for="item-3"><input type="checkbox" name="item-3" id="item-3"/><span class="check-blue"></span><h3>Type Something Here…</h3></label>
+                        <div class="status">
+                            <a class="pen" href="#"><i class="fas fa-pencil-alt" ></i></a>
+                            <a class="star" href="#"><i class="fas fa-star"></i></a>
+                        </div>
+                        <div class="tools">
+                            <span class="icon-calendar"><i class="far fa-calendar-alt"></i>5/14</span>
+                            <span class="icon-file"><i class="far fa-file"></i></span>
+                            <span class="icon-message"><i class="far fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <div class="calendar">
+                            <label for="calendar"><i class="far fa-calendar-alt"></i>Deadline</label>
+                            <input id="calendar" type="" value="" placeholder="yyyy/mm/dd" /><input id="calendar" type="" value="" placeholder="hh:mm" />
+                        </div>
+                        <div class="file">
+                            <label for="file"><i class="far fa-file"></i>File</label>
+                            <div><input id="file" type="file" name="file" accept=".jpg, .jpeg, .png">
+                                <i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="message">
+                            <label for="message"><i class="far fa-comment-dots"></i>Comment</label>
+                            <textarea cols="50" rows="5" placeholder="Type your memo here…"></textarea>
+                        </div>
+                    </div>
+                    <div class="item-btn">
+                        <a class="btn-cancel" href="#"><i class="fas fa-times"></i>Cancel</a><a class="btn-save" href="#"><i class="fas fa-plus"></i>Add Task</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-bar">
+                        <label for="item-4"><input type="checkbox" name="item-4" id="item-4"/><span class="check-blue"></span><h3>Type Something Here…</h3></label>
+                        <div class="status">
+                            <a class="pen" href="#"><i class="fas fa-pencil-alt" ></i></a>
+                            <a class="star" href="#"><i class="fas fa-star"></i></a>
+                        </div>
+                        <div class="tools">
+                            <span class="icon-calendar"><i class="far fa-calendar-alt"></i>5/14</span>
+                            <span class="icon-file"><i class="far fa-file"></i></span>
+                            <span class="icon-message"><i class="far fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <div class="calendar">
+                            <label for="calendar"><i class="far fa-calendar-alt"></i>Deadline</label>
+                            <input id="calendar" type="" value="" placeholder="yyyy/mm/dd" /><input id="calendar" type="" value="" placeholder="hh:mm" />
+                        </div>
+                        <div class="file">
+                            <label for="file"><i class="far fa-file"></i>File</label>
+                            <div><input id="file" type="file" name="file" accept=".jpg, .jpeg, .png">
+                                <i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="message">
+                            <label for="message"><i class="far fa-comment-dots"></i>Comment</label>
+                            <textarea cols="50" rows="5" placeholder="Type your memo here…"></textarea>
+                        </div>
+                    </div>
+                    <div class="item-btn">
+                        <a class="btn-cancel" href="#"><i class="fas fa-times"></i>Cancel</a><a class="btn-save" href="#"><i class="fas fa-plus"></i>Add Task</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>
